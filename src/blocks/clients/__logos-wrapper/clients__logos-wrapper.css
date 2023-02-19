@@ -1,0 +1,13 @@
+.clients__logos-wrapper {
+    display: flex;
+    /* gap: 135px; */
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 900px) {
+    .clients__logos-wrapper {
+        flex-direction: column;
+        gap: 30px; 
+        align-items: center;
+    }
+}

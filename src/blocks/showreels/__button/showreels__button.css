@@ -1,0 +1,23 @@
+.showreels__button {
+    text-decoration: none;
+    max-width: 400px;
+    padding: 20px;
+    height: 100px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid rgba(227, 228, 230, 0.55);
+    border-radius: 100px;
+    color:#E3E4E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 0 50px #eda20046;
+}
+
+.showreels__button:hover {
+    background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
+    cursor: pointer;
+}
+
+

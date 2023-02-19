@@ -1,0 +1,14 @@
+.work__article-text {
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 500px) {
+    .work__article-text {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}

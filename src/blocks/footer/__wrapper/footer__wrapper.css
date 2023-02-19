@@ -1,0 +1,14 @@
+.footer__wrapper {
+    padding: 40px auto;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+@media screen and (max-width: 1280px) {
+    .footer__wrapper {
+        padding-top: 0;
+        gap: 20px;
+    }
+}
