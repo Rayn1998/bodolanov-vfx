@@ -13,11 +13,14 @@ import polyarniy2 from '../images/posters/polyarniy2.jpeg'
 import rescue_day from '../images/posters/rescue_day.jpeg'
 import sobor from '../images/posters/sobor.jpeg'
 import vezet from '../images/posters/vezet.jpeg'
+import niletto from '../images/posters/niletto.jpeg'
+import polo from '../images/posters/polo.jpeg'
+import vici from '../images/posters/vici.jpeg'
 
 
 const Carousel = () => {
     const posters = [
-        bomba, 
+        niletto, 
         konek,
         mira,
         obitel,
@@ -26,7 +29,10 @@ const Carousel = () => {
         polyarniy2,
         rescue_day,
         sobor,
-        vezet
+        vezet,
+        bomba,
+        polo,
+        vici
     ]
     return (
         <>
@@ -73,11 +79,13 @@ const Carousel = () => {
                         }
                     }}
                 >
-                    {posters.map(poster => {
+                    {posters.map((poster, i) => {
                         return(
-                            <SwiperSlide>
-                                <img src={poster} className='carousel-element' alt={poster} />
-                            </SwiperSlide>
+                            <>
+                                <SwiperSlide>
+                                    <img src={poster} key={i} className='carousel-element' alt={poster} />
+                                </SwiperSlide>
+                            </>
                         )
                     })}
                 </Swiper>

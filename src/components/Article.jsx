@@ -1,9 +1,10 @@
 import React from 'react';
 
-function Article({poster, title, typeOfWork, trailerLink, children, open, orderImg, imdbLink}) {
+function Article({poster, title, typeOfWork, trailerLink, children, open, orderImg, imdbLink, bgImage}) {
   const {setLink, setCurrentTitle, handlePopupTrailer} = open
   const order = orderImg
   const imdb = imdbLink
+  const bg = bgImage
 
   function handleClick() {
     setLink(trailerLink)
@@ -13,6 +14,10 @@ function Article({poster, title, typeOfWork, trailerLink, children, open, orderI
 
   return (
     <article className='work__article'>
+        <div className='work__article-background-wrapper'>
+          <div className='work__article-background' style={{backgroundImage: `url(${bg})`}}>
+          </div>
+        </div>
         <a className={`work__image-wrapper ${order === 1 ? '' : 'work__image-wrapper_order_2'}`} href={imdb} target="_blank">
           <img
             className='work__article-image'

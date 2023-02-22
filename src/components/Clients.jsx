@@ -10,10 +10,10 @@ function Clients(props) {
       <div className="clients__content">
         <h2 className="clients__title">Some of<span className="bold-text"> the clients I have <br />worked for</span></h2>
         <div className="clients__logos-wrapper">
-          <img className="clients__logo" src={kinopoisk} />
-            <img className="clients__logo" src={russia1} />
-          <img className="clients__logo" src={okko} />
-          <img className="clients__logo" src={ivi} />
+          <img className="clients__logo" src={kinopoisk} alt='Кинопоиск' />
+            <img className="clients__logo" src={russia1} alt='Россия 1' />
+          <img className="clients__logo" src={okko} alt='okko' />
+          <img className="clients__logo" src={ivi} alt='ivi' />
         </div>
       </div>
     </div>

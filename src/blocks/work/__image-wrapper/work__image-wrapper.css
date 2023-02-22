@@ -12,6 +12,7 @@
   max-width: 594px;
   max-height: 491px;
   position: relative;
+  z-index: 1;
 }
 
 .work__image-wrapper:hover {

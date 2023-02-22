@@ -4,6 +4,9 @@
 /* PAGE */
 @import url("../blocks/page.css");
 
+/* ARROW-UP */
+@import url("../blocks/arrow-up/arrow-up.css");
+
 /* BODY */
 @import url("../blocks/body/body.css");
 
@@ -15,14 +18,22 @@
 @import url("../blocks/home/__button/home__button.css");
 @import url("../blocks/home/__player/home__player.css");
 @import url("../blocks/home/__video/home__video.css");
+@import url("../blocks/home/__menu/home__menu.css");
+@import url("../blocks/home/__menu-wrapper/home__menu-wrapper.css");
+@import url("../blocks/home/__menu-icon/home__menu-icon.css");
+@import url("../blocks/home/__menu-item/home__menu-item.css");
 
 /* HEADER */
-@import url("../blocks/header/header.css");
+/* @import url("../blocks/header/header.css");
 @import url("../blocks/header/__logo/header__logo.css");
 @import url("../blocks/header/__menu/header__menu.css");
 @import url("../blocks/header/__menu-items/header__menu-items.css");
 @import url("../blocks/header/__menu-item/header__menu-item.css");
-@import url("../blocks/header/__menu-item/_active/header__menu-item_active.css");
+@import url("../blocks/header/__menu-item/_active/header__menu-item_active.css"); */
+
+/* HEADER-VIDEO */
+@import url("../blocks/header-video/header-video.css");
+@import url("../blocks/header-video/__src/header-video__src.css");
 
 /* CLIENTS */
 @import url("../blocks/clients/clients.css");
@@ -40,7 +51,8 @@
 @import url("../blocks/work/__image-wrapper/work__image-wrapper.css");
 @import url("../blocks/work/__article-image/work__article-image.css");
 @import url("../blocks/work/__image-wrapper/_order/work__image-wrapper_order_2.css");
-/* @import url("../blocks/work/__article-image/_order/work__article-image_order_2.css"); */
+@import url("../blocks/work/__article-background-wrapper/work__article-background-wrapper.css");
+@import url("../blocks/work/__article-background/work__article-background.css");
 @import url("../blocks/work/__article-text-content/work__article-text-content.css");
 @import url("../blocks/work/__article-text-wrapper/work__article-text-wrapper.css");
 @import url("../blocks/work/__article-title/work__article-title.css");
@@ -52,6 +64,7 @@
 @import url("../blocks/work/__article-button/work__article-button.css");
 
 /* CAROUSEL */
+@import url("../blocks/carousel-title.css");
 @import url("../blocks/carousel/element/carousel-element.css");
 
 /* ABOUT ME */
@@ -65,6 +78,11 @@
 @import url("../blocks/about-me/__image/_area/about-me__image_area_1.css");
 @import url("../blocks/about-me/__image/_area/about-me__image_area_2.css");
 @import url("../blocks/about-me/__image/_area/about-me__image_area_3.css");
+
+/* WORKSTACK */
+@import url("../blocks/workstack/workstack.css");
+@import url("../blocks/workstack/__title/workstack__title.css");
+@import url("../blocks/workstack/__icons/workstack__icons.css");
 
 /* SHOWREELS */
 @import url('../blocks/showreels/showreels.css');

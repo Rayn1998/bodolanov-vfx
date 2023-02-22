@@ -1,0 +1,30 @@
+.home__menu-item {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    font-size: 24px;
+    color:rgb(175, 175, 175);
+}
+
+.home__menu-item:hover {
+    color: #fff;
+}
+
+.home__menu-item::after {
+    content: '';
+    width: 0;
+    height: 1px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%; 
+    display: block;
+    background-color: #fff;
+    transition: width 0.3s ease-in-out;
+    transform: translate(-50%);
+}
+
+.home__menu-item:hover::after {
+    width: 100%;
+}

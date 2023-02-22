@@ -3,15 +3,34 @@ import Main from './Main'
 import '../pages/index.css'
 import PopupTrailer from './PopupTrailer';
 
-// about__me_text сделать адаптивным
-// footer socials
-
 function App() {
   const [isPopupOpened, setrIsPopupOpened] = useState(false)
   const [currentLink, setCurrentLink] = useState('')
   const [currentTitle, setCurrentTitle] = useState('')
+  const [shown, setShown] = useState(false);
+  const [arrowUpShow, setArrowUpShow] = useState(false)
 
+  const [prevSrollPos, setPrevScrollPos] = useState(0);
+
+  const homeRef = useRef()
   const workRef = useRef()
+  const showreelsRef = useRef()
+  const contactsRef = useRef()
+
+  function handleArrowUp() {
+    const currentScrollPos = window.pageYOffset
+    setArrowUpShow((prevSrollPos > currentScrollPos && prevSrollPos - currentScrollPos > 1000) || currentScrollPos > 300)
+    setPrevScrollPos(currentScrollPos)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleArrowUp)
+    return () => window.removeEventListener('scroll', handleArrowUp)
+  }, [handleArrowUp, arrowUpShow, prevSrollPos])
+
+  function handleMenuIcon(e) {
+    setShown(!shown)
+  }
 
   function setLink(link) {
     setCurrentLink(link)
@@ -26,8 +45,26 @@ function App() {
     workRef.current.focus() 
   }
 
-  function scroll() {
+  function scrollHome() {
+    homeRef.current.scrollIntoView({
+      behavior: 'smooth',
+    })
+  }
+
+  function scrollWorks() {
     workRef.current.scrollIntoView({
+      behavior: 'smooth',
+    })
+  }
+
+  function scrollShowreels() {
+    showreelsRef.current.scrollIntoView({
+      behavior: 'smooth',
+    })
+  }
+
+  function scrollContacts() {
+    contactsRef.current.scrollIntoView({
       behavior: 'smooth',
     })
   }
@@ -61,9 +98,18 @@ function App() {
         props={{
           handlePopupTrailer,
           setLink,
+          homeRef,
           workRef,
-          scroll,
-          setCurrentTitle
+          showreelsRef,
+          contactsRef,
+          scrollHome,
+          scrollWorks,
+          scrollContacts,
+          scrollShowreels,
+          setCurrentTitle,
+          handleMenuIcon,
+          shown,
+          arrowUpShow
         }}
       />
       <PopupTrailer

@@ -1,0 +1,29 @@
+.workstack__icons {
+    display: flex;
+    padding: 20px 100px;
+    justify-self: center;
+    gap: 130px;
+    background: linear-gradient(90deg, rgba(103,81,11, 0.2) 0%, 
+    rgba(103,81,11, 0.85) 50%, 
+    rgba(103,81,11, 0.2) 100%);
+    transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+    .workstack__icons {
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .workstack__icons {
+        gap: 20px;
+        padding: 20px 50px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .workstack__icons {
+        flex-direction: column;
+    }
+}

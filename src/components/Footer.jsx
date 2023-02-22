@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Footer() {
+function Footer({props}) {
   return (
-    <footer className="footer">
+    <footer className="footer" ref={props.contactsRef}>
       <div className="footer__wrapper">
         <div className="footer__content">
           <h2 className="footer__title">Get <span className="bold-text">in Touch.</span></h2>
