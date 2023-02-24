@@ -81,11 +81,14 @@ const Carousel = () => {
                 >
                     {posters.map((poster, i) => {
                         return(
-                            <>
-                                <SwiperSlide>
-                                    <img src={poster} key={i} className='carousel-element' alt={poster} />
-                                </SwiperSlide>
-                            </>
+                            <SwiperSlide>
+                                <img src={poster} 
+                                    key={i} 
+                                    className='carousel-element' 
+                                    alt={poster} 
+                                    loading='lazy'
+                                />
+                            </SwiperSlide>
                         )
                     })}
                 </Swiper>

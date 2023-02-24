@@ -1,5 +1,6 @@
 .home__menu-item {
     list-style: none;
+    text-decoration: none;
     display: inline-block;
     position: relative;
     cursor: pointer;

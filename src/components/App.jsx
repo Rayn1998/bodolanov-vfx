@@ -1,9 +1,14 @@
+// Переписать и упростить компонент Article
+
 import { useEffect, useState, useRef } from 'react'
+import { useNavigate } from 'react-router-dom'
+
 import Main from './Main'
 import '../pages/index.css'
 import PopupTrailer from './PopupTrailer';
 
 function App() {
+
   const [isPopupOpened, setrIsPopupOpened] = useState(false)
   const [currentLink, setCurrentLink] = useState('')
   const [currentTitle, setCurrentTitle] = useState('')
@@ -17,6 +22,8 @@ function App() {
   const showreelsRef = useRef()
   const contactsRef = useRef()
 
+  const navigation = useNavigate()
+
   function handleArrowUp() {
     const currentScrollPos = window.pageYOffset
     setArrowUpShow((prevSrollPos > currentScrollPos && prevSrollPos - currentScrollPos > 1000) || currentScrollPos > 300)
@@ -28,7 +35,7 @@ function App() {
     return () => window.removeEventListener('scroll', handleArrowUp)
   }, [handleArrowUp, arrowUpShow, prevSrollPos])
 
-  function handleMenuIcon(e) {
+  function menuClick(e) {
     setShown(!shown)
   }
 
@@ -55,18 +62,26 @@ function App() {
     workRef.current.scrollIntoView({
       behavior: 'smooth',
     })
+    setShown(false)
   }
 
   function scrollShowreels() {
     showreelsRef.current.scrollIntoView({
       behavior: 'smooth',
     })
+    setShown(false)
   }
 
   function scrollContacts() {
     contactsRef.current.scrollIntoView({
       behavior: 'smooth',
     })
+    setShown(false)
+  }
+
+  function toOtherProjects() {
+    navigation('/other-projects')
+    setShown(false)
   }
 
   useEffect(() => {
@@ -107,16 +122,17 @@ function App() {
           scrollContacts,
           scrollShowreels,
           setCurrentTitle,
-          handleMenuIcon,
+          menuClick,
           shown,
-          arrowUpShow
+          arrowUpShow,
+          toOtherProjects,
         }}
       />
       <PopupTrailer
-        title={currentTitle}
-        isOpen={isPopupOpened}
-        onClose={closePopups}
-        link={currentLink}
+          title={currentTitle}
+          isOpen={isPopupOpened}
+          onClose={closePopups}
+          link={currentLink}
       />
     </>
   );

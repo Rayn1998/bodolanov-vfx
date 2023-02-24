@@ -4,7 +4,6 @@
     background-image: url("../../images/arrow_up.png");
     background-size: cover;
     filter: invert(100) opacity(0.5);
-    display: absolute;
     position: fixed;
     bottom: 5%;
     right: 10%;

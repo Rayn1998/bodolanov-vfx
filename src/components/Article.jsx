@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Article({poster, title, typeOfWork, trailerLink, children, open, orderImg, imdbLink, bgImage}) {
+function Article({poster, title, typeOfWork, trailerLink, children, open, orderImg, imdbLink, bgImage, mainText}) {
   const {setLink, setCurrentTitle, handlePopupTrailer} = open
   const order = orderImg
   const imdb = imdbLink
@@ -29,7 +29,7 @@ function Article({poster, title, typeOfWork, trailerLink, children, open, orderI
           <div className="work__article-text-wrapper">
             <h2 className="work__article-title">{title}</h2>
             <p className="work__article-text">
-              {children}
+              <span className="bold-text">{mainText[0]}</span> {mainText[1]}
             </p>
           </div>
           <p className="work__article-categorie">{typeOfWork}</p>

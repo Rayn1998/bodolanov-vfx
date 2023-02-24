@@ -30,12 +30,14 @@ function AboutMe({props}) {
       <WorkStack />
       </div>
 
-
-      <div className="showreels" ref={props.showreelsRef}>
-        <div className="showreels__button" link="https://youtu.be/ZaesolB9YxY" onClick={handleClick}>VIEW COMPOSITING SHOWREEL<div
-          className="work__article-button-icon"></div></div>
-        <div className="showreels__button" link="https://youtu.be/ysI8GA44cFc" onClick={handleClick} >VIEW MATCHMOVE SHOWREEL<div
-          className="work__article-button-icon"></div></div>
+      <div className="showreels__wrapper">
+        <h2 className="showreels__title" >Showreels</h2>
+        <div className="showreels" ref={props.showreelsRef}>
+          <div className="showreels__button" link="https://youtu.be/5fyhmXkz7Ug" onClick={handleClick}>VIEW COMPOSITING SHOWREEL<div
+            className="work__article-button-icon"></div></div>
+          <div className="showreels__button" link="https://youtu.be/ysI8GA44cFc" onClick={handleClick} >VIEW MATCHMOVE SHOWREEL<div
+            className="work__article-button-icon"></div></div>
+        </div>
       </div>
     </>
   );

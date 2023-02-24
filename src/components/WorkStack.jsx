@@ -6,14 +6,16 @@ import houdini from '../images/soft-icons/houdini.png'
 import nuke from '../images/soft-icons/Nuke.png'
 
 const WorkStack = () => {
+
+    const icons = [eq, maya, houdini, nuke]
+
     return (
         <div className='workstack'>
             <h2 className='workstack__title'>Working stack</h2>
             <div className='workstack__icons'>
-                <img src={eq} alt='3de'/>
-                <img src={maya} alt='houdini'/>
-                <img src={houdini} alt='maya'/>
-                <img src={nuke} alt='nuke'/>
+                {icons.map((icon) => {
+                    return <div className='workstack__icon' key={icon} style={{backgroundImage: `url(${icon})`}}></div>
+                })}
             </div>
         </div>
     )

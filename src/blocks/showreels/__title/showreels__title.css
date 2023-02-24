@@ -1,0 +1,8 @@
+.showreels__title {
+    margin: 0;
+    font-size: 64px; 
+    text-shadow: 0 0 100px  rgba(0, 0, 0, 1);
+    color: #e7d6fa;
+    text-align: center;
+    box-shadow: 0 0 30px 3px #000;
+}

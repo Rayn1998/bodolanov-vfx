@@ -20,16 +20,9 @@
 @import url("../blocks/home/__video/home__video.css");
 @import url("../blocks/home/__menu/home__menu.css");
 @import url("../blocks/home/__menu-wrapper/home__menu-wrapper.css");
+@import url("../blocks/home/__home-icon/home__home-icon.css");
 @import url("../blocks/home/__menu-icon/home__menu-icon.css");
 @import url("../blocks/home/__menu-item/home__menu-item.css");
-
-/* HEADER */
-/* @import url("../blocks/header/header.css");
-@import url("../blocks/header/__logo/header__logo.css");
-@import url("../blocks/header/__menu/header__menu.css");
-@import url("../blocks/header/__menu-items/header__menu-items.css");
-@import url("../blocks/header/__menu-item/header__menu-item.css");
-@import url("../blocks/header/__menu-item/_active/header__menu-item_active.css"); */
 
 /* HEADER-VIDEO */
 @import url("../blocks/header-video/header-video.css");
@@ -83,10 +76,18 @@
 @import url("../blocks/workstack/workstack.css");
 @import url("../blocks/workstack/__title/workstack__title.css");
 @import url("../blocks/workstack/__icons/workstack__icons.css");
+@import url("../blocks/workstack/__icon/workstack__icon.css");
 
 /* SHOWREELS */
 @import url('../blocks/showreels/showreels.css');
+@import url('../blocks/showreels/__wrapper/showreels__wrapper.css');
+@import url('../blocks/showreels/__title/showreels__title.css');
 @import url('../blocks/showreels/__button/showreels__button.css');
+
+/* OTHER-PROJECTS */
+@import url("../blocks/other-projects/other-projects.css");
+@import url("../blocks/other-projects/__img-wrapper/other-projects__img-wrapper.css");
+@import url("../blocks/other-projects/__img/other-projects__img.css");
 
 /* FOOTER */
 @import url("../blocks/footer/footer.css");
