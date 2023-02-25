@@ -1,5 +1,6 @@
 .work__content{
     padding: 80px 110px 120px;
+    transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 978px) {

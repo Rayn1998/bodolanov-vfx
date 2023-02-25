@@ -77,9 +77,9 @@ const Carousel = () => {
                                 depth: 200,
                             }
                         },
-                        300: {
+                        400: {
                             spaceBetween: 0,
-                            slidesPerView: 1
+                            slidesPerView: 2
                         }
                     }}
                 >

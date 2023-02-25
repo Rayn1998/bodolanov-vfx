@@ -14,7 +14,6 @@ const OtherProjectView = () => {
         return r.keys().map(r);
     }
 
-
     const Images = {
         shipImages: importAll(require.context(
             "../images/other_projects/ship/",
@@ -33,7 +32,7 @@ const OtherProjectView = () => {
 
         saxonpistolImages: importAll(
             require.context(
-            "../images/other_projects/saxon_pistol/",
+            "../images/other_projects/saxonpistol/",
             false,
             /\.(png|jpe?g|svg)$/
             )
@@ -41,7 +40,7 @@ const OtherProjectView = () => {
 
         frenchflintlockImages: importAll(
             require.context(
-            "../images/other_projects/french_flintlock/",
+            "../images/other_projects/frenchflintlock/",
             false,
             /\.(png|jpe?g|svg)$/
             )
