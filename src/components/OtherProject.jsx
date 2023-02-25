@@ -4,7 +4,7 @@ import OtherProjectView from './OtherProjectView';
 
 const OtherProject = ({image, texts, i, path, link}) => {
 
-    const newPath = path.replace(' ', '')
+    const newPath = String(path.replace(' ', '').split('-').join(''))
 
     const navigation = useNavigate()
 
@@ -31,11 +31,9 @@ const OtherProject = ({image, texts, i, path, link}) => {
             onMouseOut={() => {
                 handleMouseOff()}
             }
-            // onClick={() => {
-            //     console.log('click')
-            //     navigation(newPath)
-            //     // <OtherProjectView images={shipImages} />
-            // }}
+            onClick={() => {
+                navigation(newPath)
+            }}
         >
             <div 
                 className='other-projects__img-wrapper'

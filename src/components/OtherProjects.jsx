@@ -6,7 +6,7 @@ import ship from '../images/other_projects/ship/1.jpeg'
 import tank from '../images/other_projects/tank/1.jpg'
 import saxonPistol from '../images/other_projects/saxon_pistol/1.jpg'
 import frenchFlintlock from '../images/other_projects/french_flintlock/1.jpg'
-import ak47 from '../images/other_projects/AK47/1.jpg'
+import ak47 from '../images/other_projects/ak47/1.jpg'
 import hand from '../images/other_projects/hand/1.jpeg'
 import waterdrop from '../images/other_projects/waterdrop/1.jpeg'
 
@@ -31,7 +31,7 @@ const OtherProjects = ({link}) => {
                             texts={texts}
                             path={texts[i]}
                             i={i}
-                            link={link}
+                            // link={link}
                         />
                     )
                 })}

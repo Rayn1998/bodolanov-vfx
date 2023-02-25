@@ -99,6 +99,13 @@
 @import url("../blocks/other-projects/__img-wrapper/other-projects__img-wrapper.css");
 @import url("../blocks/other-projects/__img/other-projects__img.css");
 
+/* OTHER PROJECT VIEW */
+@import url("../blocks/other-project-view/other-project-view.css");
+@import url("../blocks/other-project-view/__back/other-project-view__back.css");
+@import url("../blocks/other-project-view/__title/other-project-view-title.css");
+@import url("../blocks/other-project-view/__img/other-project-view__img.css");
+@import url("../blocks/other-project-view/__img-wrapper/other-project-view__img-wrapper.css");
+
 /* FOOTER */
 @import url("../blocks/footer/footer.css");
 @import url("../blocks/footer/__wrapper/footer__wrapper.css");

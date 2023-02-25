@@ -1,7 +1,7 @@
 import React from 'react';
 import bgVideo from '../videos/Site_Header.mp4';
 
-const HeaderVideo = (b) => {
+const HeaderVideo = () => {
     return (
         <div className='header-video'>
             <video 

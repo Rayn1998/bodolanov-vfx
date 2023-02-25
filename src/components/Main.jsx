@@ -28,7 +28,7 @@ function Main({props}) {
 
       <Routes>
 
-        <Route path="other-projects" element={
+        <Route path="/other-projects" element={
           <OtherProjects link={props.toCurtainProject} />
         } />
 

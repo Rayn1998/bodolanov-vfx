@@ -11,7 +11,7 @@
   cursor: pointer;
   max-width: 594px;
   max-height: 491px;
-  position: relative;
+  /* position: relative; */
   z-index: 1;
 }
 
