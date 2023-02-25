@@ -1,6 +1,12 @@
 import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import OtherProjectView from './OtherProjectView';
 
-const OtherProject = ({image, texts, i}) => {
+const OtherProject = ({image, texts, i, path, link}) => {
+
+    const newPath = path.replace(' ', '')
+
+    const navigation = useNavigate()
 
     const [mouseOn, setMouseOn] = useState(false)
 
@@ -25,6 +31,11 @@ const OtherProject = ({image, texts, i}) => {
             onMouseOut={() => {
                 handleMouseOff()}
             }
+            // onClick={() => {
+            //     console.log('click')
+            //     navigation(newPath)
+            //     // <OtherProjectView images={shipImages} />
+            // }}
         >
             <div 
                 className='other-projects__img-wrapper'

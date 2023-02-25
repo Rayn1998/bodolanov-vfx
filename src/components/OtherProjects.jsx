@@ -7,31 +7,36 @@ import tank from '../images/other_projects/tank/1.jpg'
 import saxonPistol from '../images/other_projects/saxon_pistol/1.jpg'
 import frenchFlintlock from '../images/other_projects/french_flintlock/1.jpg'
 import ak47 from '../images/other_projects/AK47/1.jpg'
+import hand from '../images/other_projects/hand/1.jpeg'
+import waterdrop from '../images/other_projects/waterdrop/1.jpeg'
 
-import motion1 from '../videos/motion_1.mov'
-
-const OtherProjects = () => {
-
+const OtherProjects = ({link}) => {
+    
     const images = [
-        ship, tank, saxonPistol, frenchFlintlock, ak47
+        ship, tank, saxonPistol, frenchFlintlock, ak47, hand, waterdrop
     ]
 
     const texts = [
-        'Ship', 'Tank', 'Saxon Pistol', 'French Flintlock', 'AK-47'
+        'Ship', 'Tank', 'Saxon Pistol', 'French Flintlock', 'AK-47', "Hand", "Waterdrop"
     ]
 
     return (
-        <div className='other-projects'>
-            {images.map((image, i) => {
-                return (
-                    <OtherProject 
-                        image={image}
-                        texts={texts}
-                        i={i}
-                    />
-                )
-            })}
-        </div>
+        <>
+            <h2 className='other-projects__title'>Other Projects</h2>
+            <div className='other-projects'>
+                {images.map((image, i) => {
+                    return (
+                        <OtherProject 
+                            image={image}
+                            texts={texts}
+                            path={texts[i]}
+                            i={i}
+                            link={link}
+                        />
+                    )
+                })}
+            </div>
+        </>
     )
 }
 

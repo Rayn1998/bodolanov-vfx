@@ -4,6 +4,15 @@
 /* PAGE */
 @import url("../blocks/page.css");
 
+/* NAVIGATION */
+@import url("../blocks/navigation.css");
+
+/* LOADING */
+@import url("../blocks/loading.css");
+
+/* PAGE NOT FOUND */
+@import url("../blocks/page-not-found.css");
+
 /* ARROW-UP */
 @import url("../blocks/arrow-up/arrow-up.css");
 
@@ -86,6 +95,7 @@
 
 /* OTHER-PROJECTS */
 @import url("../blocks/other-projects/other-projects.css");
+@import url("../blocks/other-projects/__title/other-projects__title.css");
 @import url("../blocks/other-projects/__img-wrapper/other-projects__img-wrapper.css");
 @import url("../blocks/other-projects/__img/other-projects__img.css");
 

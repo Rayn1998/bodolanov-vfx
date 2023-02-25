@@ -1,5 +1,5 @@
 .workstack__title {
-    color: #E3E4E6;
+    color: var(--main-text-color);
     font-size: 48px;
     margin: 0;
 }

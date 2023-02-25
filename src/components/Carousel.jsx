@@ -1,4 +1,8 @@
 import React from 'react'
+
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/opacity.css'
+
 import {Autoplay, FreeMode, Scrollbar, EffectCoverflow} from 'swiper'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import 'swiper/css'
@@ -82,8 +86,9 @@ const Carousel = () => {
                     {posters.map((poster, i) => {
                         return(
                             <SwiperSlide>
-                                <img src={poster} 
+                                <LazyLoadImage src={poster} 
                                     key={i} 
+                                    effect='opacity'
                                     className='carousel-element' 
                                     alt={poster} 
                                     loading='lazy'

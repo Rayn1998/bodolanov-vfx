@@ -1,4 +1,6 @@
 import React from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+
 import image1 from '../images/about-me__image_1.png'
 import image2 from '../images/about-me__image_2.png'
 import image3 from '../images/about-me__image_3.png'
@@ -22,9 +24,9 @@ function AboutMe({props}) {
               joyful images and visual effects.</span></p>
           </div>
           <div className="about-me__images">
-            <img className="about-me__image about-me__image_area_1" src={image1} alt='tracker' />
-            <img className="about-me__image about-me__image_area_2" src={image2} alt='tracker' />
-            <img className="about-me__image about-me__image_area_3" src={image3} alt='tracker' />
+            <LazyLoadImage className="about-me__image about-me__image_area_1" src={image1} alt='tracker' />
+            <LazyLoadImage className="about-me__image about-me__image_area_2" src={image2} alt='tracker' />
+            <LazyLoadImage className="about-me__image about-me__image_area_3" src={image3} alt='tracker' />
           </div>
         </div>
       <WorkStack />

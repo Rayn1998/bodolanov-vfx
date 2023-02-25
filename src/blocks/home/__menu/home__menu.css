@@ -6,20 +6,12 @@
 
 @media screen and (max-width: 1200px) {
     .home__menu {
-        gap: 150px;
+        gap: 50px;
     }
 }
 
 @media screen and (max-width: 1000px) {
     .home__menu {
-        gap: 80px;
-    }
-}
-
-@media screen and (max-width: 850px) {
-    .home__menu {
-        padding-top: 150px;
         flex-direction: column;
-        gap: 50px;
     }
 }

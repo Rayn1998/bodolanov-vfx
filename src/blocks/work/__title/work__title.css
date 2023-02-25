@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 72px;
-    color: #E3E4E6;
+    color: var(--main-text-color);
     line-height: 72px;
     margin: 0 0 97px;
     text-align: center;

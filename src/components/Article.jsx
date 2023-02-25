@@ -1,5 +1,7 @@
 import React from 'react';
-
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/opacity.css'
+ 
 function Article({poster, title, typeOfWork, trailerLink, children, open, orderImg, imdbLink, bgImage, mainText}) {
   const {setLink, setCurrentTitle, handlePopupTrailer} = open
   const order = orderImg
@@ -19,7 +21,8 @@ function Article({poster, title, typeOfWork, trailerLink, children, open, orderI
           </div>
         </div>
         <a className={`work__image-wrapper ${order === 1 ? '' : 'work__image-wrapper_order_2'}`} href={imdb} target="_blank">
-          <img
+          <LazyLoadImage
+            effect='opacity'
             className='work__article-image'
             src={poster}
           />

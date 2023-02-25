@@ -2,37 +2,61 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from './Home'
 import Clients from './Clients'
-import Work from './Work'
-import Carousel from './Carousel'
+// import Work from './Work'
+// import Carousel from './Carousel'
 import AboutMe from './AboutMe'
 import Footer from './Footer'
-// import Clock from './Clock'
 import HeaderVideo from './HeaderVideo'
 import ArrowUp from './ArrowUp'
 import OtherProjects from './OtherProjects'
+import OtherProjectView from './OtherProjectView'
+import Navigation from './Navigation'
+import Loading from './Loading'
+import PageNotFound from './PageNotFound'
+
+const LazyWork = React.lazy(() => import('./Work'))
+const LazyCarousel = React.lazy(() => import('./Carousel'))
 
 function Main({props}) {
   
   return (
     <main className="page">
+
       <ArrowUp scroll={props.scrollHome} show={props.arrowUpShow} />
       <HeaderVideo />
-      <Home props={props} />
+      <Navigation props={props} />
+
       <Routes>
+
         <Route path="other-projects" element={
-          <OtherProjects />
+          <OtherProjects link={props.toCurtainProject} />
         } />
 
-        <Route path="/" element={
-          <>
+        <Route path="other-projects/:id" element={
+          <OtherProjectView />
+        } />
+
+        <Route exact path="/" element={
+          <React.Suspense fallback={<Loading/>}>
+
+            <Home props={props} />
             <Clients />
-            <Work props={props}/>
+
+            <React.Suspense fallback={<Loading/>}>
+              <LazyWork props={props}/>
+            </React.Suspense>
+
             <h2 className='carousel-title'>Other projects</h2>
-            <Carousel />
+            <LazyCarousel />
             <AboutMe props={props}/>
             {/* <Clock /> */}
             <Footer props={props}/>
-          </>
+
+          </React.Suspense>
+        } />
+
+        <Route path="*" element={
+          <PageNotFound />
         } />
       </Routes>
     </main>

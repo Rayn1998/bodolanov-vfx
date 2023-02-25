@@ -1,7 +1,7 @@
 // Переписать и упростить компонент Article
 
 import { useEffect, useState, useRef } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation, Navigate } from 'react-router-dom'
 
 import Main from './Main'
 import '../pages/index.css'
@@ -23,6 +23,7 @@ function App() {
   const contactsRef = useRef()
 
   const navigation = useNavigate()
+  const location = useLocation()
 
   function handleArrowUp() {
     const currentScrollPos = window.pageYOffset
@@ -58,30 +59,54 @@ function App() {
     })
   }
 
+  function linkHome() {
+    navigation('/')
+  }
+
+  function checkHome() {
+    return location.pathname === '/'
+  }
+
   function scrollWorks() {
-    workRef.current.scrollIntoView({
-      behavior: 'smooth',
-    })
-    setShown(false)
+    if (checkHome()) {
+        workRef.current.scrollIntoView({
+          behavior: 'smooth',
+        })
+        setShown(false)
+    } else {
+      linkHome()
+    }
   }
 
   function scrollShowreels() {
-    showreelsRef.current.scrollIntoView({
-      behavior: 'smooth',
-    })
-    setShown(false)
+    if (checkHome()) {
+      showreelsRef.current.scrollIntoView({
+        behavior: 'smooth',
+      })
+      setShown(false)
+    } else {
+      linkHome()
+    }
   }
 
   function scrollContacts() {
-    contactsRef.current.scrollIntoView({
-      behavior: 'smooth',
-    })
-    setShown(false)
+    if (checkHome()) {
+      contactsRef.current.scrollIntoView({
+        behavior: 'smooth',
+      })
+      setShown(false)
+    } else {
+      linkHome()
+    }
   }
 
   function toOtherProjects() {
     navigation('/other-projects')
     setShown(false)
+  }
+
+  function toCurtainProject(path) {
+    navigation(path)
   }
 
   useEffect(() => {
@@ -122,10 +147,12 @@ function App() {
           scrollContacts,
           scrollShowreels,
           setCurrentTitle,
+          linkHome,
           menuClick,
           shown,
           arrowUpShow,
           toOtherProjects,
+          toCurtainProject,
         }}
       />
       <PopupTrailer

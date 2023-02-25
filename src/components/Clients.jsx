@@ -1,4 +1,7 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/opacity.css'
+
 import kinopoisk from '../images/clients__kinopoisk_logo.png'
 import russia1 from '../images/clients__russia1_logo.png'
 import okko from '../images/clients__okko_logo.png'
@@ -10,10 +13,10 @@ function Clients(props) {
       <div className="clients__content">
         <h2 className="clients__title">Some of<span className="bold-text"> the clients I have <br />worked for</span></h2>
         <div className="clients__logos-wrapper">
-          <img className="clients__logo" src={kinopoisk} alt='Кинопоиск' />
-            <img className="clients__logo" src={russia1} alt='Россия 1' />
-          <img className="clients__logo" src={okko} alt='okko' />
-          <img className="clients__logo" src={ivi} alt='ivi' />
+          <LazyLoadImage className="clients__logo" effect='opacity' src={kinopoisk} alt='Кинопоиск' />
+            <LazyLoadImage className="clients__logo" effect='opacity' src={russia1} alt='Россия 1' />
+          <LazyLoadImage className="clients__logo" effect='opacity' src={okko} alt='okko' />
+          <LazyLoadImage className="clients__logo" effect='opacity' src={ivi} alt='ivi' />
         </div>
       </div>
     </div>

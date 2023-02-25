@@ -1,6 +1,5 @@
 .clients__logos-wrapper {
     display: flex;
-    /* gap: 135px; */
     justify-content: space-between;
 }
 

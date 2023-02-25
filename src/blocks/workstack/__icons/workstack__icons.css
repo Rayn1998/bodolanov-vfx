@@ -4,9 +4,9 @@
     justify-self: center;
     gap: 130px;
     box-shadow: 0 0 30px #000;
-    background: linear-gradient(90deg, rgba(87, 9, 139, 0.1) 0%, 
-    rgba(87, 9, 139, 0.7) 50%, 
-    rgba(87, 9, 139, 0.1) 100%);
+    background: linear-gradient(90deg, var(--overlay-low-opacity) 0%, 
+    var(--overlay) 50%, 
+    var(--overlay-low-opacity) 100%);
     transition: all 0.5s ease-in-out;
 }
 
