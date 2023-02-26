@@ -1,5 +1,3 @@
-// Переписать и упростить компонент Article
-
 import { useEffect, useState, useRef } from 'react';
 import { useNavigate, useLocation, Navigate } from 'react-router-dom';
 
@@ -183,7 +181,6 @@ function App() {
       </Popup>
 
       <Popup
-        title={currentTitle}
 				isOpen={isFormOpened}
 				onClose={closePopups}
         title='CONTACT WITH ME'

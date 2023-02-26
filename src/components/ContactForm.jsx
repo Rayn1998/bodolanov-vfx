@@ -45,7 +45,7 @@ const ContactForm = ({ onClose }) => {
 				<input
 					type="hidden"
 					name="_next"
-					value="https://bodolanov-vfx.com/thank"
+					value="https://bodolanov-vfx.com/#/thank"
 				></input>
 				<textarea
 					className="contact-form__text"
