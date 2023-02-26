@@ -59,6 +59,14 @@ const images = {
             /\.(png|jpe?g|svg|mp4)$/
         )
     ),
+
+    rainImages: importAll(
+        require.context(
+            '../images/other_projects/rain/',
+            false,
+            /\.(png|jpe?g|svg|mp4)$/
+        )
+    ),
 }
 
 export default images

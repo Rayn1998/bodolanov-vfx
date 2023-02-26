@@ -9,7 +9,6 @@ import {
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import images from '../utils/images';
-import hand from '../images/other_projects/hand/Site_Header.mp4'
 
 const OtherProjectView = () => {
 	const { id } = useParams();
@@ -22,8 +21,6 @@ const OtherProjectView = () => {
 	const exists = folders.find((el) => {
 		return el === name;
 	});
-
-	// const movEx = images
 
 	const navigate = useNavigate();
 	const location = useLocation();
@@ -47,21 +44,22 @@ const OtherProjectView = () => {
 				<h2 className="other-project-view-title">{id}</h2>
 				{images[exists].map((image, i) => {
 					let movEx = image.includes('mp4');
-					// console.log(image)
-					if (movEx) console.log(image);
 					return (
 						<>
 							<div className="other-project-view__img-wrapper">
 								{movEx ? (
-									<ReactPlayer
-										url={image}
+									<video
+										controls
 										className="other-project-view__vid"
-										width="100%"
-										height="100%"
-										controls={true}
-										playing={true}
 										key={image}
-									/>
+										loop
+									>
+										<source
+											src={image}
+											type='video/mp4'
+										>
+										</source>
+									</video>
 								) : (
 									<LazyLoadImage
 										className="other-project-view__img"

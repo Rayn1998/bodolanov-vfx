@@ -8,6 +8,18 @@ function Footer({props}) {
           <h2 className="footer__title">Get <span className="bold-text">in Touch.</span></h2>
           <p className="footer__text">So that we can talk more about...</p>
         </div>
+
+        {/* <div 
+          className="showreels__button" 
+          style={{
+            alignSelf: 'center',
+          }}
+        >
+          WRITE A MESSAGE TO ME
+          <div className="work__article-button-icon">
+          </div>
+        </div> */}
+
         <div className="footer__socials">
           <a href="mailto:yuriy.bodolanov@gmail.com" 
             className="footer__social-icon footer__social-icon_type_mail"></a>

@@ -9,6 +9,7 @@ import frenchFlintlock from '../images/other_projects/frenchflintlock/1.jpg';
 import ak47 from '../images/other_projects/ak47/1.jpg';
 import hand from '../images/other_projects/hand/1.jpeg';
 import waterdrop from '../images/other_projects/waterdrop/1.jpeg';
+import rain from '../images/other_projects/rain/1.jpeg';
 
 const OtherProjects = ({ link }) => {
 	const images = [
@@ -19,6 +20,7 @@ const OtherProjects = ({ link }) => {
 		ak47,
 		hand,
 		waterdrop,
+		rain,
 	];
 
 	const texts = [
@@ -29,6 +31,7 @@ const OtherProjects = ({ link }) => {
 		'AK-47',
 		'Hand',
 		'Waterdrop',
+		'Rain',
 	];
 
 	return (
@@ -42,7 +45,6 @@ const OtherProjects = ({ link }) => {
 							texts={texts}
 							path={texts[i]}
 							i={i}
-							// link={link}
 						/>
 					);
 				})}
