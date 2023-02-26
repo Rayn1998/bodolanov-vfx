@@ -2,8 +2,6 @@ import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import Home from './Home';
 import Clients from './Clients';
-// import Work from './Work'
-// import Carousel from './Carousel'
 import AboutMe from './AboutMe';
 import Footer from './Footer';
 import HeaderVideo from './HeaderVideo';
@@ -13,6 +11,7 @@ import OtherProjectView from './OtherProjectView';
 import Navigation from './Navigation';
 import Loading from './Loading';
 import PageNotFound from './PageNotFound';
+import Thank from './Thank';
 
 const LazyWork = React.lazy(() => import('./Work'));
 const LazyCarousel = React.lazy(() => import('./Carousel'));
@@ -26,6 +25,7 @@ function Main({ props }) {
 
 			<Routes>
 				<Route path='/page-not-found' element={<PageNotFound />} />
+				<Route path='/thank' element={<Thank />} />
 				<Route
 					exact
 					path="/"

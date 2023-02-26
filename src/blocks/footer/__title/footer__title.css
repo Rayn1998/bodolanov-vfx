@@ -5,12 +5,6 @@
     font-weight: 300;
     font-size: 56px;
     line-height: 84px;
-    background: linear-gradient(90deg, rgba(158,125,18, 0) 0%,
-    var(--workstack-bg) 30%, 
-    var(--workstack-bg) 50%, 
-    var(--workstack-bg) 30%,  
-    rgba(158,125,18, 0) 100%);
-    box-shadow: 0 0 30px 3px #000;
     display: flex;
     justify-content: center;
     gap: 20px;

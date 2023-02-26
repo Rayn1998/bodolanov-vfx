@@ -1,7 +1,6 @@
 .footer__wrapper {
-    padding: 40px auto;
     padding-top: 80px;
-    padding-bottom: 20px;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     gap: 60px;

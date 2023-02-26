@@ -128,3 +128,11 @@
 @import url("../blocks/popup/__title/popup__title.css");
 @import url("../blocks/popup/_opened/popup_opened.css");
 @import url("../blocks/popup/__player/popup__player.css");
+@import url("../blocks/popup/__player-wrapper/popup__player-wrapper.css");
+
+/* CONTACT FORM */
+@import url("../blocks/contact-form/contact-form.css");
+@import url("../blocks/contact-form/__container/contact-form__container.css");
+@import url("../blocks/contact-form/__text/contact-form__text.css");
+@import url("../blocks/contact-form/__email/contact-form__email.css");
+@import url("../blocks/contact-form/__btn/contact-form__btn.css");

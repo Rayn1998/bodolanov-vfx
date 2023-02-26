@@ -1,6 +1,8 @@
 .popup__content {
-  width: 75vw;
-  height: 70vh;
+  /* width: 75vw; */
+  width: fit-content;
+  /* height: 70vh; */
+  height: fit-content;
   padding: 34px 36px;
   background-color: transparent;
   color: #000;
@@ -8,6 +10,10 @@
   border-radius: 10px;
   position: relative;
   cursor: default;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 440px) {

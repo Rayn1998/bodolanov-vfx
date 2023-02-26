@@ -9,16 +9,17 @@ function Footer({props}) {
           <p className="footer__text">So that we can talk more about...</p>
         </div>
 
-        {/* <div 
+        <div 
           className="showreels__button" 
           style={{
             alignSelf: 'center',
           }}
+          onClick={props.handleContactForm}
         >
           WRITE A MESSAGE TO ME
           <div className="work__article-button-icon">
           </div>
-        </div> */}
+        </div>
 
         <div className="footer__socials">
           <a href="mailto:yuriy.bodolanov@gmail.com" 
