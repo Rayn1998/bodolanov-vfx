@@ -65,7 +65,7 @@ function Work({ props }) {
             poster={sobor}
             title="Sobor"
             typeOfWork="Compose, matchmove"
-            trailerLink="https://youtu.be/r2RWBTLTfWA"
+            trailerLink="https://www.youtube.com/watch?v=zmunjiXo_MA"
             open={props}
             orderImg={2}
             imdbLink="https://www.imdb.com/title/tt12026382/?ref_=nm_flmg_i_3_vsl"

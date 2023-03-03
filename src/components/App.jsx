@@ -50,19 +50,19 @@ function App() {
 
 	function handlePopupTrailer() {
 		setrIsPopupOpened(!isPopupOpened);
-    setArrowUpShow(false);
+		setArrowUpShow(false);
 	}
 
 	function closePopups() {
 		setrIsPopupOpened(false);
-    setFormOpened(false);
-    setArrowUpShow(true);
+		setFormOpened(false);
+		setArrowUpShow(true);
 		workRef.current.focus();
 	}
 
 	function handleContactForm() {
 		setFormOpened(!isFormOpened);
-    setArrowUpShow(!arrowUpShow);
+		setArrowUpShow(!arrowUpShow);
 	}
 
 	function scrollHome() {
@@ -79,36 +79,48 @@ function App() {
 		return location.pathname === '/';
 	}
 
+	function scroll(ref) {
+		ref.current.scrollIntoView({
+			behavior: 'smooth',
+		});
+	}
+
 	function scrollWorks() {
 		if (checkHome()) {
-			workRef.current.scrollIntoView({
-				behavior: 'smooth',
-			});
+			scroll(workRef);
 			setShown(false);
 		} else {
 			linkHome();
+			setTimeout(() => {
+				scroll(workRef);
+				setShown(false);
+			}, 1000);
 		}
 	}
 
 	function scrollShowreels() {
 		if (checkHome()) {
-			showreelsRef.current.scrollIntoView({
-				behavior: 'smooth',
-			});
+			scroll(showreelsRef);
 			setShown(false);
 		} else {
 			linkHome();
+			setTimeout(() => {
+				scroll(showreelsRef);
+				setShown(false);
+			}, 1000);
 		}
 	}
 
 	function scrollContacts() {
 		if (checkHome()) {
-			contactsRef.current.scrollIntoView({
-				behavior: 'smooth',
-			});
+			scroll(contactsRef);
 			setShown(false);
 		} else {
 			linkHome();
+			setTimeout(() => {
+				scroll(contactsRef);
+				setShown(false);
+			}, 1000);
 		}
 	}
 
@@ -165,7 +177,7 @@ function App() {
 					arrowUpShow,
 					toOtherProjects,
 					toCurtainProject,
-          handleContactForm,
+					handleContactForm,
 				}}
 			/>
 
@@ -173,22 +185,17 @@ function App() {
 				title={currentTitle}
 				isOpen={isPopupOpened}
 				onClose={closePopups}
-			> 
-        <Player 
-          link={currentLink}
-          isOpen={isPopupOpened}
-        />
-      </Popup>
+			>
+				<Player link={currentLink} isOpen={isPopupOpened} />
+			</Popup>
 
-      <Popup
+			<Popup
 				isOpen={isFormOpened}
 				onClose={closePopups}
-        title='CONTACT WITH ME'
-      >
-			<ContactForm 
-        onClose={closePopups}
-      /> 
-      </Popup>
+				title="CONTACT WITH ME"
+			>
+				<ContactForm onClose={closePopups} />
+			</Popup>
 		</>
 	);
 }
