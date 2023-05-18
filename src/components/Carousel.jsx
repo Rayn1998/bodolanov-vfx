@@ -85,9 +85,9 @@ const Carousel = () => {
                 >
                     {posters.map((poster, i) => {
                         return(
-                            <SwiperSlide>
+                            <SwiperSlide key={i} >
                                 <LazyLoadImage src={poster} 
-                                    key={i} 
+                                    // key={i} 
                                     effect='opacity'
                                     className='carousel-element' 
                                     alt={poster} 
