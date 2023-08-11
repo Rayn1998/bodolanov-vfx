@@ -21,6 +21,7 @@ import niletto from '../images/posters/niletto.jpeg'
 import polo from '../images/posters/polo.jpeg'
 import vici from '../images/posters/vici.jpeg'
 import kukuruza from '../images/posters/kukuruza.jpg'
+import empireV from '../images/posters/empireV.jpg'
 
 
 const Carousel = () => {
@@ -29,6 +30,7 @@ const Carousel = () => {
         konek,
         mira,
         obitel,
+        empireV,
         optimisty2,
         parma,
         polyarniy2,
