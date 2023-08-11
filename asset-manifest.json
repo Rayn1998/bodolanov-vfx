@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/bodolanov-vfx/static/css/main.a9df354a.css",
-    "main.js": "/bodolanov-vfx/static/js/main.93e6fd84.js",
+    "main.js": "/bodolanov-vfx/static/js/main.8c55ff67.js",
     "static/js/574.afcea1e2.chunk.js": "/bodolanov-vfx/static/js/574.afcea1e2.chunk.js",
     "static/css/209.06a299e4.chunk.css": "/bodolanov-vfx/static/css/209.06a299e4.chunk.css",
-    "static/js/209.06dcdff4.chunk.js": "/bodolanov-vfx/static/js/209.06dcdff4.chunk.js",
+    "static/js/209.3ed68316.chunk.js": "/bodolanov-vfx/static/js/209.3ed68316.chunk.js",
     "static/js/412.011972a6.chunk.js": "/bodolanov-vfx/static/js/412.011972a6.chunk.js",
     "static/media/waterdrop.mp4": "/bodolanov-vfx/static/media/waterdrop.4bb7cf3cdbc6fc997ad9.mp4",
     "static/media/Hand_comp_v002.mp4": "/bodolanov-vfx/static/media/Hand_comp_v002.47becc80334d8bb6af4b.mp4",
@@ -23,8 +23,8 @@
     "static/media/parma.jpg": "/bodolanov-vfx/static/media/parma.ac335478379167ce71d8.jpg",
     "static/media/konets_sveta.jpg": "/bodolanov-vfx/static/media/konets_sveta.97fbfb75f4ea87be33e0.jpg",
     "static/media/polyarniy2.jpeg": "/bodolanov-vfx/static/media/polyarniy2.3f33bc0b2514246ffabc.jpeg",
-    "static/media/rescue_day.jpeg": "/bodolanov-vfx/static/media/rescue_day.f69455f457e04b4fb1b6.jpeg",
     "static/media/konek.jpeg": "/bodolanov-vfx/static/media/konek.571997520cdf449da24f.jpeg",
+    "static/media/rescue_day.jpeg": "/bodolanov-vfx/static/media/rescue_day.d9a4f9049df1c2daf180.jpeg",
     "static/media/parma.jpeg": "/bodolanov-vfx/static/media/parma.8fc2e2d35b2809e9ddb1.jpeg",
     "static/media/vezet.jpeg": "/bodolanov-vfx/static/media/vezet.c0fbabbcc78ad6c9c184.jpeg",
     "static/media/kukuruza.jpg": "/bodolanov-vfx/static/media/kukuruza.2356351f4629161892b3.jpg",
@@ -58,14 +58,14 @@
     "index.html": "/bodolanov-vfx/index.html",
     "static/media/Close_Icon.svg": "/bodolanov-vfx/static/media/Close_Icon.039f1f5203f653b4bacd.svg",
     "main.a9df354a.css.map": "/bodolanov-vfx/static/css/main.a9df354a.css.map",
-    "main.93e6fd84.js.map": "/bodolanov-vfx/static/js/main.93e6fd84.js.map",
+    "main.8c55ff67.js.map": "/bodolanov-vfx/static/js/main.8c55ff67.js.map",
     "574.afcea1e2.chunk.js.map": "/bodolanov-vfx/static/js/574.afcea1e2.chunk.js.map",
     "209.06a299e4.chunk.css.map": "/bodolanov-vfx/static/css/209.06a299e4.chunk.css.map",
-    "209.06dcdff4.chunk.js.map": "/bodolanov-vfx/static/js/209.06dcdff4.chunk.js.map",
+    "209.3ed68316.chunk.js.map": "/bodolanov-vfx/static/js/209.3ed68316.chunk.js.map",
     "412.011972a6.chunk.js.map": "/bodolanov-vfx/static/js/412.011972a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a9df354a.css",
-    "static/js/main.93e6fd84.js"
+    "static/js/main.8c55ff67.js"
   ]
 }
