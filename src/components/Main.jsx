@@ -48,6 +48,7 @@ function Main({ props }) {
 				/>
 
 				<Route
+					exact
 					path="/other-projects"
 					element={<OtherProjects link={props.toCurtainProject} />}
 				/>

@@ -10,6 +10,7 @@ import ak47 from '../images/other_projects/ak47/1.jpg';
 import hand from '../images/other_projects/hand/1.jpeg';
 import waterdrop from '../images/other_projects/waterdrop/1.jpeg';
 import rain from '../images/other_projects/rain/1.jpeg';
+import smoke from '../images/other_projects/smoke/smoke.jpeg';
 
 const OtherProjects = ({ link }) => {
 	const images = [
@@ -21,6 +22,7 @@ const OtherProjects = ({ link }) => {
 		hand,
 		waterdrop,
 		rain,
+		smoke,
 	];
 
 	const texts = [
@@ -32,6 +34,7 @@ const OtherProjects = ({ link }) => {
 		'Hand',
 		'Waterdrop',
 		'Rain',
+		'Smoke',
 	];
 
 	return (

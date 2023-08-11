@@ -20,6 +20,7 @@ import vezet from '../images/posters/vezet.jpeg'
 import niletto from '../images/posters/niletto.jpeg'
 import polo from '../images/posters/polo.jpeg'
 import vici from '../images/posters/vici.jpeg'
+import kukuruza from '../images/posters/kukuruza.jpg'
 
 
 const Carousel = () => {
@@ -36,7 +37,8 @@ const Carousel = () => {
         vezet,
         bomba,
         polo,
-        vici
+        vici,
+        kukuruza
     ]
     return (
         <>

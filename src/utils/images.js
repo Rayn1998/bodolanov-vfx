@@ -67,6 +67,14 @@ const images = {
             /\.(png|jpe?g|svg|mp4)$/
         )
     ),
+
+    smokeImages: importAll(
+        require.context(
+            '../images/other_projects/smoke/',
+            false,
+            /\.(png|jpe?g|svg|mp4)$/
+        )
+    ),
 }
 
 export default images
