@@ -1,0 +1,53 @@
+@use '../../scss/variables' as *;
+
+.clients {
+    padding: 8rem 11.2rem 13rem;
+
+    @media screen and (max-width: $breakpoint1) {
+        padding: 10px 60px;
+    }
+
+    .clients__content {
+        max-width: 121.6rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+        transition: all 0.3s ease-in-out;
+
+        @media screen and (max-width: $breakpoint1) {
+            gap: 4rem;
+        }
+
+        .clients__title {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 4rem;
+            line-height: 150%;
+
+            @media screen and (max-width: 500px) {
+                font-size: 3.2rem;
+            }
+        }
+        
+        .clients__logos-wrapper {
+            display: flex;
+            justify-content: space-between;
+
+            @media screen and (max-width: 900px) {
+                flex-direction: column;
+                gap: 3rem; 
+                align-items: center;
+            }
+
+            .clients__logo {
+                display: block;
+                height: 4rem;
+                filter: saturate(0) brightness(0.75);
+                max-width: 100%;
+                object-fit: contain;
+            }
+            
+        }
+    }
+}

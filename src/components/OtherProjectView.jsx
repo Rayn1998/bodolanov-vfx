@@ -72,6 +72,7 @@ const OtherProjectView = () => {
 						</>
 					);
 				})}
+				<div class="sketchfab-embed-wrapper"> <iframe title="Old Wooden Ship" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/e0121cd1e16d4102b018a77bee494075/embed?ui_theme=dark"> </iframe></div>
 			</div>
 		</>
 	);
