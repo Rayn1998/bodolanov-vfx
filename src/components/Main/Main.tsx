@@ -1,15 +1,19 @@
 import React, { FC } from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
+
+import Loading from 'components/Loading/Loading';
+
+import HeaderVideo from 'components/HeaderVideo/HeaderVideo';
+import Navigation from 'components/Navigation/Navigation';
+import ArrowUp from 'components/ArrowUp/ArrowUp';
 import Home from 'components/Home/Home';
 import Clients from 'components/Clients/Clients';
+import Work from 'components/Work/Work';
+import Carousel from 'components/Carousel/Carousel';
 // import AboutMe from '../AboutMe/AboutMe';
 // import Footer from '../Footer/Footer';
-import HeaderVideo from 'components/HeaderVideo/HeaderVideo';
-import ArrowUp from 'components/ArrowUp/ArrowUp';
 // import OtherProjects from '../OtherProjects/OtherProjects';
 // import OtherProjectView from '../OtherProjectView';
-import Navigation from 'components/Navigation/Navigation';
-import Loading from 'components/Loading/Loading';
 // import PageNotFound from '../PageNotFound/PageNotFound';
 // import Thank from '../Thank';
 
@@ -32,12 +36,12 @@ const Main: FC = () => {
 						<React.Suspense fallback={<Loading />}>
 							<Home />
 							<Clients />
-
-							{/* <React.Suspense fallback={<Loading />}>
-								<LazyWork props={props} />
-							</React.Suspense> */}
+							<Work />
 
 							<h2 className="carousel-title">Other projects</h2>
+
+							<Carousel />
+
 							{/* <LazyCarousel /> */}
 							{/* <AboutMe props={props} /> */}
 							{/* <Clock /> */}

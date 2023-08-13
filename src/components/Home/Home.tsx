@@ -5,8 +5,6 @@ import { useLocation } from 'react-router-dom';
 
 const Home: FC = () => {
 
-  // const {scrollWorks} = props
-
   const location = useLocation();
 
   return (

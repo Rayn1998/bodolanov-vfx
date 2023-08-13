@@ -1,0 +1,223 @@
+@use '../../scss/variables' as *;
+
+.article {
+	display: flex;
+	gap: 5.6rem;
+	padding: 0 5rem;
+	overflow: hidden;
+	position: relative;
+
+	@media screen and (max-width: 978px) {
+		flex-direction: column;
+	}
+
+	.article__background-wrapper {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: radial-gradient(
+			rgba(255, 255, 255, 0) 5%,
+			rgb(0, 0, 0, 0.5) 30%,
+			rgb(0, 0, 0, 1) 100%
+		);
+		background-size: contain;
+
+		.article__background {
+			z-index: -2;
+			position: absolute;
+			min-width: 100%;
+			min-height: 100%;
+			top: 0;
+			left: 0;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+
+	.article__image-wrapper {
+		background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-position-y: 50rem;
+		display: flex;
+		justify-content: center;
+		align-self: center;
+		align-items: center;
+		cursor: pointer;
+		max-width: 59.4rem;
+		max-height: 49.1rem;
+		position: relative;
+		z-index: 1;
+
+		@media screen and (max-width: 978px) {
+			overflow: hidden;
+		}
+
+		&:hover {
+			background-position-y: 0;
+			transition: 0.3s all ease;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.4);
+			opacity: 0;
+		}
+
+		&:hover::before {
+			opacity: 1;
+			transition: 0.3s all ease;
+		}
+
+		&::after {
+			content: url('../../assets/images/imdb_icon.png');
+			filter: brightness(0.75) saturate(0.7);
+			position: absolute;
+			top: 70rem;
+		}
+
+		&:hover::after {
+			top: 20rem;
+			transition: 0.4s all ease;
+		}
+
+		.article__image {
+			max-height: 49.1rem;
+			z-index: -1;
+			box-shadow: 0 0 50px rgb(22, 2, 45);
+		}
+	}
+
+	.article__image-wrapper_order_2 {
+		order: 1;
+
+		@media screen and (max-width: 978px) {
+			order: 0;
+		}
+	}
+
+	.article__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 3.2rem;
+		padding-top: 12.5rem;
+		margin-bottom: 5rem;
+		z-index: 1;
+
+		@media screen and (max-width: 1280px) {
+			padding-top: 0;
+		}
+
+		.article__text-content {
+			display: flex;
+			flex-direction: column;
+			gap: 2.4rem;
+
+			.article__text-wrapper {
+				display: flex;
+				flex-direction: column;
+				gap: 3.6rem;
+
+				.article__title {
+					margin: 0;
+					padding: 0;
+					font-size: 5.6rem;
+					line-height: 4.8rem;
+					font-weight: 600;
+					color: $main-text-color;
+				}
+
+				.article__text {
+					margin: 0;
+					padding: 0;
+					font-size: 3.2rem;
+					line-height: 4.8rem;
+					font-weight: 300;
+					border-radius: 1rem;
+					/* background-color: rgba(0,0,0, 0.65); */
+					background-color: rgba(16, 1, 25, 0.6);
+					box-shadow: 0 0 3rem rgb(15, 1, 31);
+					transition: all 0.3s ease-in-out;
+
+					@media screen and (max-width: 500px) {
+						font-size: 2.4rem;
+						line-height: 3.6rem;
+					}
+				}
+			}
+
+			.article__categorie {
+				margin: 0;
+				padding: 0;
+				font-weight: 300;
+				font-size: 1.8rem;
+				line-height: 2.7rem;
+				display: block;
+				max-width: max-content;
+				border-radius: 0.8rem;
+				background-color: rgba(24, 2, 39, 0.6);
+				box-shadow: 0 0 1.5rem #000;
+			}
+		}
+
+		.article__button {
+			width: 18rem;
+			height: 4rem;
+			box-sizing: border-box;
+			background-color: transparent;
+			border: 0.2rem solid $btn-small-border;
+			border-radius: 10rem;
+			box-shadow: 0 0 3rem 1rem $main-bg-color;
+			color: $side-text-color;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 0.8rem;
+			overflow: hidden;
+
+			&:hover {
+				cursor: pointer;
+			}
+
+			&::before {
+				content: '';
+				z-index: -1;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				background: linear-gradient(
+					99.05deg,
+					$main-bg-color 0.07%,
+					$purple-light 106.32%
+				);
+				transition: opacity 0.2s ease-in-out;
+			}
+
+			&:hover::before {
+				opacity: 1;
+			}
+
+			.article__button-icon {
+				height: 2.4rem;
+				width: 2.4rem;
+				background-image: url('../../assets/images/button__right.png');
+				background-size: 0.7rem 1.4rem;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+		}
+	}
+}

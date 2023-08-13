@@ -24,34 +24,15 @@
 
 /* CLIENTS */
 @use 'components/Clients/Clients.scss';
-// @import url("../blocks/clients/__content/clients__content.css");
-// @import url("../blocks/clients/__title/clients__title.css");
-// @import url("../blocks/clients/__logos-wrapper/clients__logos-wrapper.css");
-// @import url("../blocks/clients/__logo/clients__logo.css");
 
 /* WORK */
 @use 'components/Work/Work.scss';
-// @import url("../blocks/work/__content/work__content.css");
-// @import url("../blocks/work/__title/work__title.css");
-// @import url("../blocks/work/__articles/work__articles.css");
-// @import url("../blocks/work/__article/work__article.css");
-// @import url("../blocks/work/__image-wrapper/work__image-wrapper.css");
-// @import url("../blocks/work/__article-image/work__article-image.css");
-// @import url("../blocks/work/__image-wrapper/_order/work__image-wrapper_order_2.css");
-// @import url("../blocks/work/__article-background-wrapper/work__article-background-wrapper.css");
-// @import url("../blocks/work/__article-background/work__article-background.css");
-// @import url("../blocks/work/__article-text-content/work__article-text-content.css");
-// @import url("../blocks/work/__article-text-wrapper/work__article-text-wrapper.css");
-// @import url("../blocks/work/__article-title/work__article-title.css");
-// @import url("../blocks/work/__article-text/work__article-text.css");
-// @import url("../blocks/work/__article-categorie/work__article-categorie.css");
-// @import url("../blocks/work/__article-button/work__article-button.css");
-// @import url("../blocks/work/__article-button-icon/work__article-button-icon.css");
-// @import url("../blocks/work/__artilce-wrapper/work__article-wrapper.css");
-// @import url("../blocks/work/__article-button/work__article-button.css");
 
-// /* CAROUSEL */
-// @import url("../blocks/carousel-title.css");
+/* ARTICLE */
+@use 'components/Article/Article.scss';
+
+/* CAROUSEL */
+@use 'components/Carousel/Carousel.scss';
 // @import url("../blocks/carousel/element/carousel-element.css");
 
 // /* ABOUT ME */

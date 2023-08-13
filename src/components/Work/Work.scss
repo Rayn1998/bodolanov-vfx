@@ -1,0 +1,39 @@
+@use '../../scss/variables' as *;
+
+.work {
+	.work__content {
+		padding: 8rem 11rem 12rem;
+		transition: all 0.3s ease-in-out;
+
+		@media screen and (max-width: 978px) {
+			padding: 8rem 2.5rem 12rem;
+		}
+
+		.work__title {
+			font-family: 'Work Sans', 'Arial', sans-serif;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 7.2rem;
+			color: $main-text-color;
+			line-height: 7.2rem;
+			margin: 0 0 9.7rem;
+			text-align: center;
+
+			@media screen and (max-width: 600px) {
+				font-size: 5.4rem;
+				line-height: 5.6rem;
+			}
+
+			@media screen and (max-width: 380px) {
+				font-size: 3.6rem;
+				line-height: 4.8rem;
+			}
+		}
+
+		.work__articles {
+			display: flex;
+			flex-direction: column;
+			gap: 9.7rem;
+		}
+	}
+}
