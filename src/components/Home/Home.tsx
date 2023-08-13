@@ -1,14 +1,17 @@
-import { FC } from 'react';
+import { FC, RefObject } from 'react';
 
 import { useLocation } from 'react-router-dom';
 
+interface IProps {
+  ref: RefObject<HTMLDivElement>;
+}
 
-const Home: FC = () => {
+const Home: FC<IProps> = ({ ref }) => {
 
   const location = useLocation();
 
   return (
-    <div className="home">
+    <div className="home" ref={ref} >
       <h1 className="home__title">Compositing and matchmove artist specialising in <span className="bold-text">VFX</span></h1>
       <button 
         style={{
@@ -20,6 +23,6 @@ const Home: FC = () => {
       ></button>
     </div>
   );
-}
+};
 
 export default Home;

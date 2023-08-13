@@ -1,4 +1,4 @@
-import React, { FC, useRef } from 'react';
+import React, { FC, useCallback, useRef } from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 
 import Loading from 'components/Loading/Loading';
@@ -22,16 +22,26 @@ import PageNotFound from 'components/PageNotFound/PageNotFound';
 
 const Main: FC= () => {
 
-	const homeRef = useRef<HTMLElement>(null);
-	const workRef = useRef<HTMLElement>(null);
+	const homeRef = useRef<HTMLDivElement>(null);
+	const workRef = useRef<HTMLDivElement>(null);
 	const showreelsRef = useRef<HTMLElement>(null);
 	const contactsRef = useRef<HTMLElement>(null);
+
+	const handleWorkdsClick = useCallback(() => {
+		homeRef.current.scrollIntoView();
+	}, []);
 
 	return (
 		<main className="main">
 			<ArrowUp />
 			<HeaderVideo />
-			<Navigation />
+			<Navigation props={{
+				homeRef,
+				workRef,
+				showreelsRef,
+				contactsRef,
+			}} 
+			/>
 
 			<Routes>
 				{/* <Route path='/thank' element={<Thank />} /> */}
@@ -39,7 +49,7 @@ const Main: FC= () => {
 					path="/"
 					element={
 						<React.Suspense fallback={<Loading />}>
-							<Home />
+							<Home ref={homeRef} />
 							<Clients />
 							<Work ref={workRef} />
 

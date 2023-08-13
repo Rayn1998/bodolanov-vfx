@@ -1,10 +1,15 @@
-import { FC, forwardRef } from 'react';
+import { FC, RefObject } from 'react';
 import Article from 'components/Article/Article';
 import articles from 'utils/articles';
 
 import IArticle from 'types/IArticle';
 
-const Work = forwardRef<HTMLDivElement>((ref) => {
+interface IProps {
+	ref: RefObject<HTMLDivElement>;
+}
+
+const Work: FC<IProps> = ({ ref }) => {
+	console.log(ref)
 	return (
 		<div className='work' ref={ref} >
 			<div className='work__content'>
@@ -19,6 +24,6 @@ const Work = forwardRef<HTMLDivElement>((ref) => {
 			</div>
 		</div>
 	);
-});
+};
 
 export default Work;

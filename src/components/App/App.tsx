@@ -44,7 +44,7 @@ const App: FC = () => {
 	function closePopups() {
 		setFormOpened(false);
 		// setArrowUpShow(true);
-		workRef.current.focus();
+		// workRef.current.focus();
 	}
 
 	function handleContactForm() {
@@ -74,12 +74,12 @@ const App: FC = () => {
 
 	function scrollWorks() {
 		if (checkHome()) {
-			scroll(workRef);
+			// scroll(workRef);
 			setShown(false);
 		} else {
 			linkHome();
 			setTimeout(() => {
-				scroll(workRef);
+				// scroll(workRef);
 				setShown(false);
 			}, 1000);
 		}
@@ -87,12 +87,12 @@ const App: FC = () => {
 
 	function scrollShowreels() {
 		if (checkHome()) {
-			scroll(showreelsRef);
+			// scroll(showreelsRef);
 			setShown(false);
 		} else {
 			linkHome();
 			setTimeout(() => {
-				scroll(showreelsRef);
+				// scroll(showreelsRef);
 				setShown(false);
 			}, 1000);
 		}
@@ -100,12 +100,12 @@ const App: FC = () => {
 
 	function scrollContacts() {
 		if (checkHome()) {
-			scroll(contactsRef);
+			// scroll(contactsRef);
 			setShown(false);
 		} else {
 			linkHome();
 			setTimeout(() => {
-				scroll(contactsRef);
+				// scroll(contactsRef);
 				setShown(false);
 			}, 1000);
 		}

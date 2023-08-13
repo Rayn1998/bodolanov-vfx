@@ -1,11 +1,15 @@
 import { FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Navigation: FC = () => {
+interface IProps {
+	props: any;
+}
+
+const Navigation: FC<IProps> = ({ props }) => {
+	console.log(props.workRef)
 	const navigate = useNavigate();
 
 	return (
-		//ref={props.homeRef}
 		<nav className='navigation'>
 			<div 
         className='navigation__home-icon'
@@ -28,7 +32,7 @@ const Navigation: FC = () => {
 			>
 				<li
 					className='navigation__menu-item'
-					//onClick={scrollWorks}
+					onClick={() => props.workRef.current.scrollIntoView()}
 				>
 					Latest works
 				</li>
