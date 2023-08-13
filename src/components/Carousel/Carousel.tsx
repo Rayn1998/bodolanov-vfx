@@ -13,10 +13,9 @@ const Carousel: FC = () => {
 	return (
 		<>
 			<div
-				style={{
-					margin: '100px 50px',
-				}}
+				className='carousel'
 			>
+				<h2 className="carousel-title">Other projects</h2>
 				<Swiper
 					modules={[Autoplay, FreeMode, Scrollbar, EffectCoverflow]}
 					effect='coverflow'

@@ -10,7 +10,7 @@ import Home from 'components/Home/Home';
 import Clients from 'components/Clients/Clients';
 import Work from 'components/Work/Work';
 import Carousel from 'components/Carousel/Carousel';
-// import AboutMe from '../AboutMe/AboutMe';
+import AboutMe from 'components/AboutMe/AboutMe';
 // import Footer from '../Footer/Footer';
 // import OtherProjects from '../OtherProjects/OtherProjects';
 // import OtherProjectView from '../OtherProjectView';
@@ -38,12 +38,11 @@ const Main: FC = () => {
 							<Clients />
 							<Work />
 
-							<h2 className="carousel-title">Other projects</h2>
+							{/* <h2 className="carousel-title">Other projects</h2> */}
 
 							<Carousel />
 
-							{/* <LazyCarousel /> */}
-							{/* <AboutMe props={props} /> */}
+							<AboutMe />
 							{/* <Clock /> */}
 							{/* <Footer props={props} /> */}
 						</React.Suspense>

@@ -3,6 +3,9 @@
 /* MAIN */
 @use 'components/Main/Main.scss';
 
+/* HEADER-VIDEO */
+@use 'components/HeaderVideo/HeaderVideo.scss';
+
 /* NAVIGATION */
 @use 'components/Navigation/Navigation.scss';
 
@@ -19,9 +22,6 @@
 @use 'components/Home/Home.scss';
 
 
-/* HEADER-VIDEO */
-@use 'components/HeaderVideo/HeaderVideo.scss';
-
 /* CLIENTS */
 @use 'components/Clients/Clients.scss';
 
@@ -33,19 +33,9 @@
 
 /* CAROUSEL */
 @use 'components/Carousel/Carousel.scss';
-// @import url("../blocks/carousel/element/carousel-element.css");
 
-// /* ABOUT ME */
-// @import url("../blocks/about-me/about-me.css");
-// @import url("../blocks/about-me/__content/about-me__content.css");
-// @import url("../blocks/about-me/__text-content/about-me__text-content.css");
-// @import url("../blocks/about-me/__title/about-me__title.css");
-// @import url("../blocks/about-me/__text/about-me__text.css");
-// @import url("../blocks/about-me/__images/about-me__images.css");
-// @import url("../blocks/about-me/__image/about-me__image.css");
-// @import url("../blocks/about-me/__image/_area/about-me__image_area_1.css");
-// @import url("../blocks/about-me/__image/_area/about-me__image_area_2.css");
-// @import url("../blocks/about-me/__image/_area/about-me__image_area_3.css");
+/* ABOUT ME */
+@use 'components/AboutMe/AboutMe.scss';
 
 // /* WORKSTACK */
 // @import url("../blocks/workstack/workstack.css");
