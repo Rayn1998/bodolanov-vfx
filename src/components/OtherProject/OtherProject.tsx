@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import { FC, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import OtherProjectView from '../OtherProjectView';
+// import OtherProjectView from '../OtherProjectView';
 
-const OtherProject = ({ image, texts, i, path, link }) => {
-	const newPath = String(path.replace(' ', '').split('-').join(''));
+// { image, texts, i, path, link }
+
+const OtherProject: FC = () => {
+	// const newPath = String(path.replace(' ', '').split('-').join(''));
 
 	const navigation = useNavigate();
 
@@ -21,9 +23,9 @@ const OtherProject = ({ image, texts, i, path, link }) => {
 		<div
 			className="other-projects__img"
 			style={{
-				backgroundImage: `url(${image})`,
+				// backgroundImage: `url(${image})`,
 			}}
-			key={image}
+			// key={image}
 			onMouseOver={() => {
 				handleMouseOn();
 			}}
@@ -31,7 +33,7 @@ const OtherProject = ({ image, texts, i, path, link }) => {
 				handleMouseOff();
 			}}
 			onClick={() => {
-				navigation(newPath);
+				// navigation(newPath);
 			}}
 		>
 			<div
@@ -40,7 +42,7 @@ const OtherProject = ({ image, texts, i, path, link }) => {
 					transform: mouseOn ? 'translateY(0)' : 'translateY(200px)',
 				}}
 			>
-				{texts[i]}
+				{/* {texts[i]} */}
 			</div>
 		</div>
 	);

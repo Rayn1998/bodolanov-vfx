@@ -1,13 +1,12 @@
-import { FC, ReactElement } from 'react';
+import { FC, forwardRef } from 'react';
 import Article from 'components/Article/Article';
 import articles from 'utils/articles';
 
 import IArticle from 'types/IArticle';
 
-const Work: FC = () => {
+const Work = forwardRef<HTMLDivElement>((ref) => {
 	return (
-		// ref={props.workRef}
-		<div className='work'>
+		<div className='work' ref={ref} >
 			<div className='work__content'>
 				<h2 className='work__title' id='works'>
 					Participated in these projects
@@ -20,6 +19,6 @@ const Work: FC = () => {
 			</div>
 		</div>
 	);
-};
+});
 
 export default Work;

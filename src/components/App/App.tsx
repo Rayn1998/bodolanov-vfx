@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, FC } from 'react';
+import { useEffect, useState, FC } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 import Main from 'components/Main/Main';
@@ -14,11 +14,6 @@ const App: FC = () => {
 	// const [arrowUpShow, setArrowUpShow] = useState<boolean>(false);
 
 	const [prevSrollPos, setPrevScrollPos] = useState<number>(0);
-
-	const homeRef = useRef<HTMLElement>();
-	const workRef = useRef<HTMLElement>();
-	const showreelsRef = useRef<HTMLElement>();
-	const contactsRef = useRef<HTMLElement>();
 
 	const navigation = useNavigate();
 	const location = useLocation();
@@ -154,7 +149,7 @@ const App: FC = () => {
 				// props={{
 				// 	setLink,
 				// 	homeRef,
-				// 	workRef,
+					// workRef,
 				// 	showreelsRef,
 				// 	contactsRef,
 				// 	scrollHome,
@@ -169,7 +164,7 @@ const App: FC = () => {
 				// 	toOtherProjects,
 				// 	toCurtainProject,
 				// 	handleContactForm,
-				// }}
+			// 	}}
 			// />
 
 			// {/* <Popup

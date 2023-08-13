@@ -1,8 +1,9 @@
-import React from 'react';
+import { FC } from 'react';
 
-function Footer({props}) {
+const Footer: FC = () => {
   return (
-    <footer className="footer" ref={props.contactsRef}>
+    //ref={props.contactsRef}
+    <footer className="footer">
       <div className="footer__wrapper">
         <div className="footer__content">
           <h2 className="footer__title">Get <span className="bold-text">in Touch.</span></h2>
@@ -14,7 +15,7 @@ function Footer({props}) {
           style={{
             alignSelf: 'center',
           }}
-          onClick={props.handleContactForm}
+          // onClick={props.handleContactForm}
         >
           WRITE A MESSAGE TO ME
           <div className="work__article-button-icon">

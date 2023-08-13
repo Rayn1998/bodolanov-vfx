@@ -9,11 +9,11 @@
 /* NAVIGATION */
 @use 'components/Navigation/Navigation.scss';
 
-// /* LOADING */
-// @import url("../blocks/loading.css");
+/* LOADING */
+@use 'components/Loading/Loading.scss';
 
-// /* PAGE NOT FOUND */
-// @import url("../blocks/page-not-found.css");
+/* PAGE NOT FOUND */
+@use 'components/PageNotFound/PageNotFound.scss';
 
 /* ARROW-UP */
 @use 'components/ArrowUp/ArrowUp.scss';
@@ -37,61 +37,26 @@
 /* ABOUT ME */
 @use 'components/AboutMe/AboutMe.scss';
 
-// /* WORKSTACK */
-// @import url("../blocks/workstack/workstack.css");
-// @import url("../blocks/workstack/__title/workstack__title.css");
-// @import url("../blocks/workstack/__icons/workstack__icons.css");
-// @import url("../blocks/workstack/__icon/workstack__icon.css");
-
-// /* SHOWREELS */
-// @import url('../blocks/showreels/showreels.css');
-// @import url('../blocks/showreels/__wrapper/showreels__wrapper.css');
-// @import url('../blocks/showreels/__title/showreels__title.css');
-// @import url('../blocks/showreels/__button/showreels__button.css');
+/* WORKSTACK */
+@use 'components/WorkStack/WorkStack.scss';
 
 // /* OTHER-PROJECTS */
 // @import url("../blocks/other-projects/other-projects.css");
-// @import url("../blocks/other-projects/__title/other-projects__title.css");
-// @import url("../blocks/other-projects/__img-wrapper/other-projects__img-wrapper.css");
-// @import url("../blocks/other-projects/__img/other-projects__img.css");
+
+/* OTHER-PROJECT */
+@use 'components/OtherProject/OtherProject.scss';
 
 // /* OTHER PROJECT VIEW */
-// @import url("../blocks/other-project-view/other-project-view.css");
-// @import url("../blocks/other-project-view/__back/other-project-view__back.css");
-// @import url("../blocks/other-project-view/__title/other-project-view-title.css");
-// @import url("../blocks/other-project-view/__img/other-project-view__img.css");
-// @import url("../blocks/other-project-view/__vid/other-project-view__vid.css");
-// @import url("../blocks/other-project-view/__img-wrapper/other-project-view__img-wrapper.css");
+// @import url("../blocks/other-project-view/
 
-// /* FOOTER */
-// @import url("../blocks/footer/footer.css");
-// @import url("../blocks/footer/__wrapper/footer__wrapper.css");
-// @import url("../blocks/footer/__content/footer__content.css");
-// @import url("../blocks/footer/__title/footer__title.css");
-// @import url("../blocks/footer/__text/footer__text.css");
-// @import url("../blocks/footer/__socials/footer__socials.css");
-// @import url("../blocks/footer/__social-icon/footer__social-icon.css");
-// @import url("../blocks/footer/__social-icon/_type/footer__social-icon_type_mail.css");
-// @import url("../blocks/footer/__social-icon/_type/footer__social-icon_type_artstation.css");
-// @import url("../blocks/footer/__social-icon/_type/footer__social-icon_type_imdb.css");
-// @import url("../blocks/footer/__social-icon/_type/footer__social-icon_type_linkedin.css");
+/* FOOTER */
+@use 'components/Footer/Footer.scss';
 
 // /* POPUP */
 // @import url("../blocks/popup/popup.css");
-// @import url("../blocks/popup/__body/popup__body.css");
-// @import url("../blocks/popup/__close-btn/popup__close-btn.css");
-// @import url("../blocks/popup/__content/popup__content.css");
-// @import url("../blocks/popup/__title/popup__title.css");
-// @import url("../blocks/popup/_opened/popup_opened.css");
-// @import url("../blocks/popup/__player/popup__player.css");
-// @import url("../blocks/popup/__player-wrapper/popup__player-wrapper.css");
 
 // /* CONTACT FORM */
 // @import url("../blocks/contact-form/contact-form.css");
-// @import url("../blocks/contact-form/__container/contact-form__container.css");
-// @import url("../blocks/contact-form/__text/contact-form__text.css");
-// @import url("../blocks/contact-form/__email/contact-form__email.css");
-// @import url("../blocks/contact-form/__btn/contact-form__btn.css");
 
 @use 'scss/variables' as *;
 

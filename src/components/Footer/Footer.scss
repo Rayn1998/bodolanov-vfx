@@ -1,0 +1,141 @@
+@use '../../scss/variables' as *;
+
+.footer {
+	position: relative;
+
+	&::after {
+		content: '';
+		z-index: -1;
+		position: static;
+		width: 10rem;
+		height: 40rem;
+		background: linear-gradient(
+			to bottom,
+			$overlay-low-opacity 0%,
+			rgba(87, 9, 139, 0.2) 100%
+		);
+	}
+
+	.footer__wrapper {
+		padding-top: 8rem;
+		padding-bottom: 10rem;
+		display: flex;
+		flex-direction: column;
+		gap: 6rem;
+		background: linear-gradient(
+			90deg,
+			rgba(158, 125, 18, 0) 0%,
+			$workstack-bg 30%,
+			$workstack-bg 50%,
+			$workstack-bg 30%,
+			rgba(158, 125, 18, 0) 100%
+		);
+
+		@media screen and (max-width: 1280px) {
+			padding-top: 0;
+			gap: 2rem;
+		}
+
+		.footer__content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background: linear-gradient(
+				90deg,
+				rgba(158, 125, 18, 0) 0%,
+				$workstack-bg 30%,
+				$workstack-bg 50%,
+				$workstack-bg 30%,
+				rgba(158, 125, 18, 0) 100%
+			);
+			box-shadow: 0 0 3rem 0.3rem #000;
+
+			@media screen and (max-width: 380px) {
+				gap: 1rem;
+			}
+
+			.footer__title {
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				font-weight: 300;
+				font-size: 5.6rem;
+				line-height: 8.4rem;
+				display: flex;
+				justify-content: center;
+				gap: 2rem;
+
+				@media screen and (max-width: 380px) {
+					flex-direction: column;
+					gap: 0;
+					align-items: center;
+				}
+			}
+
+			.footer__text {
+				margin: 0;
+				padding: 0;
+				padding-top: 0.4rem;
+				font-weight: 300;
+				font-size: 1.8rem;
+				line-height: 2.7rem;
+			}
+		}
+
+		.footer__socials {
+			margin: 0 auto;
+			padding: 0 11.6rem;
+			display: flex;
+			gap: 5.6rem;
+
+			@media screen and (max-width: 768px) {
+				padding: 0 5.6rem;
+				gap: 3.2rem;
+			}
+
+			@media screen and (max-width: 500px) {
+				gap: 1.2rem;
+				padding: 0 1.2rem;
+			}
+
+			.footer__social-icon {
+				display: block;
+				width: 4.8rem;
+				height: 4.8rem;
+			}
+
+			.footer__social-icon_type_artstation {
+				background-image: url('../../assets/images/footer__artstation-icon.png');
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+				transform: scale(0.8);
+				filter: saturate(0) brightness(0.75);
+				border-radius: 50%;
+			}
+
+			.footer__social-icon_type_imdb {
+				background-image: url('../../assets/images/footer__imdb-icon.png');
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+				border-radius: 50%;
+				filter: brightness(0.6);
+			}
+
+			.footer__social-icon_type_linkedin {
+				background-image: url('../../assets/images/footer__linkedinl-icon.png');
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+			}
+
+			.footer__social-icon_type_mail {
+				background-image: url('../../assets/images/footer__mail-icon.png');
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+			}
+		}
+	}
+}
