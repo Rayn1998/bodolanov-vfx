@@ -6,14 +6,16 @@ import konets_sveta from "../images/posters/konets_sveta.jpeg";
 import sobor from "../images/posters/sobor.jpeg";
 import upon_the_magic_roads from "../images/posters/konek.jpeg";
 import mira from "../images/posters/mira.jpeg";
+import slow_dancing from '../images/posters/slow_dancing.jpeg';
 
 import bgParma from "../images/posters/backs/parma.jpg";
 import bgMira from "../images/posters/backs/mira.jpg";
 import bgKonek from "../images/posters/backs/konek.jpg";
 import bgKonets from "../images/posters/backs/konets_sveta.jpg";
 import bgSobor from "../images/posters/backs/sobor.jpg";
+import bgSlowDancing from '../images/posters/backs/slow_dancing.jpeg';
 
-import { miraText, parmaText, konets_svetaText, soborText, konekText } from "../utils/texts"
+import { miraText, parmaText, konets_svetaText, soborText, konekText, slowDancingText } from "../utils/texts"
 
 function Work({ props }) {
   return (
@@ -21,6 +23,19 @@ function Work({ props }) {
       <div className="work__content">
         <h2 className="work__title" id="works">Participated in these projects</h2>
         <div className="work__articles">
+
+        <Article
+            poster={slow_dancing}
+            title="SLOW DANCING"
+            typeOfWork="Matchmove"
+            trailerLink="https://www.youtube.com/watch?v=eI0iTRS0Ha8"
+            open={props}
+            orderImg={2}
+            imdbLink="https://www.imdb.com/title/tt28804196/?ref_=ttfc_fc_tt"
+            bgImage={bgSlowDancing}
+            mainText={slowDancingText}
+          >
+          </Article>
           
           <Article
             poster={mira}

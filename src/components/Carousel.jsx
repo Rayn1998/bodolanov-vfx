@@ -22,6 +22,9 @@ import polo from '../images/posters/polo.jpeg'
 import vici from '../images/posters/vici.jpeg'
 import kukuruza from '../images/posters/kukuruza.jpg'
 import empireV from '../images/posters/empireV.jpg'
+import led3 from '../images/posters/led3.jpeg'
+import hockey_dads from '../images/posters/hockey_dads.jpeg'
+import slow_dancing from '../images/posters/slow_dancing.jpeg'
 
 
 const Carousel = () => {
@@ -40,7 +43,10 @@ const Carousel = () => {
         bomba,
         polo,
         vici,
-        kukuruza
+        kukuruza,
+        led3,
+        slow_dancing,
+        hockey_dads,
     ]
     return (
         <>

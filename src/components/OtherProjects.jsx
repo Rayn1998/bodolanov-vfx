@@ -6,7 +6,7 @@ import ship from '../images/other_projects/ship/1.jpeg';
 import tank from '../images/other_projects/tank/1.jpg';
 import saxonPistol from '../images/other_projects/saxonpistol/1.jpg';
 import frenchFlintlock from '../images/other_projects/frenchflintlock/1.jpg';
-import ak47 from '../images/other_projects/ak47/1.jpg';
+import ak47 from '../images/other_projects/AK47/1.jpg';
 import hand from '../images/other_projects/hand/1.jpeg';
 import waterdrop from '../images/other_projects/waterdrop/1.jpeg';
 import rain from '../images/other_projects/rain/1.jpeg';

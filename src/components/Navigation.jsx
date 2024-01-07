@@ -2,11 +2,11 @@ import React from "react";
 
 const Navigation = ({props}) => {
 
-    const {scrollWorks, scrollShowreels, scrollContacts, toOtherProjects} = props
+    const {scrollWorks, scrollShowreels, scrollContacts, toOtherProjects, linkHome} = props
 
     return (
         <nav className="navigation" ref={props.homeRef}>
-            <div className="home__home-icon" ></div>
+            <div className="home__home-icon" onClick={linkHome}></div>
             <div
                 className="home__menu-icon"
                 style={{
